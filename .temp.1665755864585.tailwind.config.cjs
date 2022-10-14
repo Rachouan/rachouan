@@ -3,8 +3,7 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["roc-grotesk", "sans-serif"],
-      display: ["roc-grotesk", "sans-serif"],
+		'display': ['Oswald', ...],
       body: ["roc-grotesk", "sans-serif"],
       heading: ["roc-grotesk", "sans-serif"],
     },
