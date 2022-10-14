@@ -1,0 +1,20 @@
+---
+// Component Imports
+import Icon from './Icon.astro';
+
+const socials = [{name:"dribbble",href:"https://dribbble.com/rachouan"}, {name:"linkedin",href:"https://dribbble.com/rachouan"}, {name:"email",href:"mailto:info@rachouan.com"}];
+---
+
+<nav class="flex py-4 justify-between items-center">
+	<a href="/">
+		<div class="monogram">
+			<img src="/assets/logo.svg" alt="Monogram" class="w-12 md:w-16"/>
+		</div>
+	</a>
+	<div class="flex gap-4 items-center">
+		{socials.map((item) => (
+			<Icon {...item}/>
+		))}
+		
+	</div>
+</nav>

@@ -1,0 +1,10 @@
+---
+const {
+	name = "null",
+	href = '#',
+} = Astro.props;
+---
+
+<a href={href} target="_blank">
+    <img src={`/assets/icons/${name}-black.png`} class="w-5" alt={`${name}-icon.png`}/>
+</a>
